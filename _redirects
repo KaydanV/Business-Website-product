@@ -1,0 +1,6 @@
+# Redirect all HTTP to HTTPS
+http://margosrestaurant.com/*    https://margosrestaurant.com/:splat    301!
+http://www.margosrestaurant.com/*    https://margosrestaurant.com/:splat    301!
+
+# Redirect www to apex
+https://www.margosrestaurant.com/*    https://margosrestaurant.com/:splat    301!

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Margo’s Mediterranean Cuisine — Contact</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon pack -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- SEO -->
+  <meta name="description" content="Reserve a table or request catering at Margo’s Mediterranean Cuisine in Griffin, GA. Call (770) 229-4602 or use our booking request form." />
+  <link rel="canonical" href="https://margosrestaurant.com/contact.html">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <span style="font-size:28px;line-height:1;">Margo’s</span>
+        <span class="sub">Mediterranean Cuisine</span>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container" style="padding:28px 0 10px;">
+    <h1 class="title" style="font-size:40px;">Get in Touch</h1>
+
+    <div class="contact-grid" style="margin-top:8px;">
+      <!-- Left: Booking request -->
+      <div class="card">
+        <h3>Reserve a Table or Request Catering</h3>
+
+        <form name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+          <input type="hidden" name="form-name" value="booking">
+          <p style="display:none;"><label>Don’t fill this out: <input name="bot-field"></label></p>
+
+          <!-- Type + Party Size -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <select id="booking-type" class="input" name="Booking Type" required>
+              <option value="" disabled selected>Booking type</option>
+              <option>Table Reservation</option>
+              <option>Event / Catering</option>
+            </select>
+
+            <select id="party-size" class="input" name="Party Size" required>
+              <option value="" disabled selected>Party size</option>
+              <option>1–2</option>
+              <option>3–4</option>
+              <option>5–6</option>
+              <option>7–8</option>
+              <option>9–12</option>
+              <option>13+</option>
+            </select>
+          </div>
+
+          <!-- Date & Time -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
+            <div>
+              <label for="date" style="display:block;font-weight:600;margin-bottom:6px;">Date</label>
+              <input id="date" class="input" type="date" name="Date" required autocomplete="off">
+            </div>
+            <div>
+              <label for="time" style="display:block;font-weight:600;margin-bottom:6px;">Time</label>
+              <input id="time" class="input" type="time" name="Time" required autocomplete="off">
+            </div>
+          </div>
+
+          <!-- Contact info -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
+            <input class="input" type="text" name="Name" placeholder="Your name" required autocomplete="name" aria-label="Your name">
+            <input class="input" type="tel" name="Phone" placeholder="Phone" required
+                   inputmode="tel" autocomplete="tel" aria-label="Phone"
+                   pattern="^\+?1?[-.\s\(\)]?\d{3}[-.\s\)]?\d{3}[-.\s]?\d{4}$"
+                   title="Enter a valid US phone number">
+          </div>
+
+          <div style="margin-top:10px;">
+            <input class="input" type="email" name="Email" placeholder="Email (for confirmation)" required autocomplete="email" aria-label="Email">
+          </div>
+
+          <!-- Notes (dynamic placeholder) -->
+          <div style="margin-top:10px;">
+            <textarea id="notes" name="Notes" placeholder="Any special requests (birthday, seating preference, patio/booth, allergies)?"></textarea>
+          </div>
+
+          <p class="note" style="margin-top:10px;">
+            Open hours: Tue–Thu 11:00–21:00, Fri 11:00–22:00, Sat 16:00–21:30. Closed Sun & Mon.<br>
+            This is a <strong>request</strong> — your booking is confirmed after we call or text you.
+          </p>
+
+          <div style="margin-top:12px;">
+            <button class="contact-btn" type="submit" aria-label="Submit booking request">Request Reservation</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right: details -->
+      <div class="card">
+        <h3>Visit or call</h3>
+        <p><strong>Address:</strong> 1136 W Taylor St, Griffin, GA 30223</p>
+        <p><strong>Phone:</strong> <a href="tel:+17702294602">(770) 229-4602</a></p>
+        <p><strong>Hours:</strong><br>
+          Monday: Closed<br>
+          Tuesday: 11:00 AM – 9:00 PM<br>
+          Wednesday: 11:00 AM – 9:00 PM<br>
+          Thursday: 11:00 AM – 9:00 PM<br>
+          Friday: 11:00 AM – 10:00 PM<br>
+          Saturday: 4:00 PM – 9:30 PM<br>
+          Sunday: Closed
+        </p>
+
+        <div style="margin-top:10px;border:1px solid var(--line);border-radius:12px;overflow:hidden;">
+          <iframe
+            title="Map to Margo’s Mediterranean Cuisine"
+            src="https://www.google.com/maps?q=1136+W+Taylor+St,+Griffin,+GA+30223&output=embed"
+            style="width:100%;height:260px;border:0;display:block;"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+          <div style="display:flex;gap:10px;padding:10px;background:#fff;">
+            <a class="cta" style="padding:8px 12px;border-radius:10px;font-weight:700;"
+               href="https://www.google.com/maps?q=1136+W+Taylor+St,+Griffin,+GA+30223"
+               target="_blank" rel="noopener">Open in Google Maps</a>
+            <a class="cta" style="padding:8px 12px;border-radius:10px;font-weight:700;background:#111;color:#fff;"
+               href="https://maps.apple.com/?address=1136%20W%20Taylor%20St,Griffin,GA,30223,United%20States"
+               target="_blank" rel="noopener">Open in Apple Maps</a>
+          </div>
+        </div>
+
+        <img src="contact_interior_dining_room.webp" alt="Dining room"
+             style="width:100%;max-height:360px;object-fit:cover;border-radius:12px;margin-top:10px;">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="badge">Family-Owned • Griffin, GA</div>
+      <div class="small" style="margin-top:8px;">© 2025 Margo’s Mediterranean Cuisine</div>
+    </div>
+  </footer>
+
+  <script>
+    // set min date to today
+    const d = document.getElementById('date');
+    if (d) d.min = new Date().toISOString().split('T')[0];
+
+    const bookingType = document.getElementById('booking-type');
+    const partySize = document.getElementById('party-size');
+    const notes = document.getElementById('notes');
+
+    const tableOptions = ["1–2","3–4","5–6","7–8","9–12","13+"];
+    const cateringOptions = ["10–20","20–50","50–75","75–100","100+"];
+
+    function setOptions(options){
+      partySize.innerHTML = '<option value="" disabled selected>Party size</option>';
+      options.forEach(txt=>{
+        const opt=document.createElement('option');
+        opt.textContent=txt;
+        partySize.appendChild(opt);
+      });
+    }
+
+    function updateNotesPlaceholder(){
+      if (!notes) return;
+      if (bookingType.value === "Event / Catering") {
+        notes.placeholder = "What type of catering? Expected number of people? Menu ideas (meze, kebabs, vegetarian), onsite/offsite, date/time window, budget?";
+      } else {
+        notes.placeholder = "Any special requests (birthday, seating preference, patio/booth, allergies)?";
+      }
+    }
+
+    bookingType.addEventListener('change', ()=>{
+      if(bookingType.value === "Event / Catering"){
+        setOptions(cateringOptions);
+      } else {
+        setOptions(tableOptions);
+      }
+      updateNotesPlaceholder();
+    });
+
+    updateNotesPlaceholder();
+
+    // validate open hours
+    (function(){
+      const time = document.getElementById('time');
+      const date = document.getElementById('date');
+      if(!time || !date) return;
+
+      function isOpen(d, t){
+        const day = d.getDay();
+        const [H,M] = t.split(':').map(Number);
+        const mins = H*60 + M;
+        const R = (o,c)=>mins>=o && mins<=c;
+        if(day===0||day===1) return false;
+        if(day>=2 && day<=4) return R(11*60, 21*60);
+        if(day===5) return R(11*60, 22*60);
+        if(day===6) return R(16*60, 21*60+30);
+        return false;
+      }
+
+      function validate(){
+        if(!time.value || !date.value) return;
+        const d = new Date(date.value+'T00:00');
+        if(!isOpen(d, time.value)){
+          time.setCustomValidity('Selected time is outside open hours for that day.');
+        } else {
+          time.setCustomValidity('');
+        }
+      }
+      time.addEventListener('change', validate);
+      date.addEventListener('change', validate);
+    })();
+  </script>
+</body>
+</html>

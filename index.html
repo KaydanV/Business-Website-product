@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Margo’s Mediterranean Cuisine — Home</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon set -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="stylesheet" href="styles.css" />
+	
+	<link rel="canonical" href="https://margosrestaurant.com/">
+
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span style="font-size:28px;line-height:1;">Margo’s</span>
+          <span class="sub">Mediterranean Cuisine</span>
+        </div>
+        <nav class="menu">
+          <a href="index.html" class="active">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="title">Mediterranean comfort, made fresh.</h1>
+        <p>Classic Greek & Lebanese favorites, Italian pastas, pizzas, and house specialties — right here in Griffin.</p>
+        <div style="margin-top:18px;">
+          <a class="cta" href="menu.html">View Menu</a>
+          <a class="cta" href="contact.html" style="margin-left:10px;background:#111;color:#fff;">Call / Visit</a>
+        </div>
+        <img src="home_hero_dining_room.webp" alt="Dining room at Margo’s" style="width:100%;max-height:460px;object-fit:cover;border-radius:16px;margin-top:22px;">
+      </div>
+    </section>
+
+    <div class="container" style="padding:28px 0;">
+      <div class="grid">
+        <div class="card" style="grid-column:span 6;">
+          <h3>Customers’ Favorites</h3>
+          <p class="clearfix">
+            <img class="float-right" src="home_highlight_pesto_salmon.webp" alt="Pesto salmon" width="220" height="150" style="border-radius:12px;object-fit:cover;">
+            Try our Mediterranean Sampler, Seafood Di Capellini, and Baked Salmon with your choice of sauce.
+          </p>
+          <a class="cta" href="menu.html">Explore the full menu</a>
+        </div>
+        <div class="card" style="grid-column:span 6;">
+          <h3>Fresh & Friendly</h3>
+          <p>We keep things simple: quality ingredients, generous portions, and genuine hospitality.</p>
+          <p class="note">Open for lunch and dinner. Dine-in, takeout, and call-ahead available.</p>
+          <div class="clearfix" style="margin-top:10px;">
+            <img class="float-left" src="home_highlight_puff_rolls.webp" alt="Garlic puff rolls" width="130" height="90" style="border-radius:10px;object-fit:cover;">
+            <img class="float-left" src="home_highlight_chicken_alfredo.webp" alt="Chicken Alfredo" width="130" height="90" style="border-radius:10px;object-fit:cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Showcase Carousel -->
+      <div style="margin-top:16px;">
+        <h3 style="color:var(--margo-red);margin:6px 0 10px;">In the Spotlight</h3>
+        <div class="carousel --wide" data-interval="6000" aria-label="Margo’s highlights carousel">
+          <div class="track">
+            <!-- First slide full-bleed -->
+            <figure class="slide">
+              <img src="about_interior_service_1.webp" alt="Mr. Zanbaka serving food to guests">
+              <figcaption class="caption">Hospitality from our family to yours</figcaption>
+            </figure>
+
+            <!-- Zoomed-out slides -->
+            <figure class="slide zoom-out">
+              <img src="about_brand_menus_wine.webp" alt="Menus and wine">
+              <figcaption class="caption">A curated selection of wines</figcaption>
+            </figure>
+
+            <figure class="slide zoom-out">
+              <img src="menu_pita_hummus.webp" alt="Warm pita with hummus">
+              <figcaption class="caption">Warm pita with house hummus</figcaption>
+            </figure>
+
+            <figure class="slide zoom-out">
+              <img src="menu_lasagna.webp" alt="Lasagna">
+              <figcaption class="caption">Lasagna — hearty & homemade</figcaption>
+            </figure>
+
+            <figure class="slide zoom-out">
+              <img src="menu_dessert_tiramisu.webp" alt="Tiramisu">
+              <figcaption class="caption">Save room for dessert</figcaption>
+            </figure>
+
+            <!-- Last slide = zoom-out + longer display -->
+            <figure class="slide zoom-out" data-duration="9000">
+              <img src="about_owner_mr_zanbaka.webp" alt="Mr. Zanbaka at Margo’s">
+              <figcaption class="caption">Mr. Zanbaka welcoming guests</figcaption>
+            </figure>
+          </div>
+
+          <button class="arrow prev" aria-label="Previous slide">‹</button>
+          <button class="arrow next" aria-label="Next slide">›</button>
+
+          <div class="dots" aria-hidden="true">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="badge">Family-Owned • Griffin, GA</div>
+        <div class="small" style="margin-top:8px;">© 2025 Margo’s Mediterranean Cuisine</div>
+      </div>
+    </footer>
+
+    <script>
+      function makeCarousel(root, {interval=6000} = {}) {
+        const track  = root.querySelector('.track');
+        const slides = [...root.querySelectorAll('.slide')];
+        const prevBtn= root.querySelector('.prev');
+        const nextBtn= root.querySelector('.next');
+        const dots   = [...root.querySelectorAll('.dot')];
+        let i = 0, timerId = null;
+
+        function applyTransform() {
+          track.style.transform = `translateX(-${i * 100}%)`;
+          dots.forEach((d,k)=>d.classList.toggle('active', k===i));
+        }
+
+        function scheduleNext() {
+          clearTimeout(timerId);
+          const thisSlide = slides[i];
+          const dur = Number(thisSlide.dataset.duration || interval);
+          timerId = setTimeout(()=> goTo(i+1), dur);
+        }
+
+        function goTo(n, user=false) {
+          i = (n + slides.length) % slides.length;
+          applyTransform();
+          if (user) clearTimeout(timerId);
+          scheduleNext();
+        }
+
+        function prev(){ goTo(i-1, true); }
+        function next(){ goTo(i+1, true); }
+
+        nextBtn.addEventListener('click', next);
+        prevBtn.addEventListener('click', prev);
+        dots.forEach((d,k)=>d.addEventListener('click', ()=>goTo(k, true)));
+
+        root.addEventListener('mouseenter', ()=>clearTimeout(timerId));
+        root.addEventListener('mouseleave', scheduleNext);
+
+        // keyboard & swipe
+        root.tabIndex = 0;
+        root.addEventListener('keydown', e=>{
+          if(e.key==='ArrowRight') next();
+          if(e.key==='ArrowLeft')  prev();
+        });
+        let x0=null;
+        root.addEventListener('touchstart', e=>x0=e.touches[0].clientX, {passive:true});
+        root.addEventListener('touchend', e=>{
+          if(x0===null) return;
+          const dx = e.changedTouches[0].clientX - x0;
+          if(Math.abs(dx)>40) (dx<0 ? next() : prev());
+          x0=null;
+        });
+
+        goTo(0);
+      }
+
+      document.querySelectorAll('.carousel').forEach(c=>{
+        const speed = Number(c.dataset.interval || 6000);
+        makeCarousel(c, {interval:speed});
+      });
+    </script>
+  </body>
+</html>
